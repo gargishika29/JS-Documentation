@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Uchen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    line-height: 1.7;
+}
+
+section header{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Uchen', serif;
+    text-transform: uppercase;
+    color: #2e7896;
+    padding: 10px;
+}   
+
+.head{
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: darkred;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#light{
+    text-align: center;
+}
+
+#main-doc header{
+    text-align: center;
+    margin: 0px;
+}
+
+section article{
+    margin: 15px;
+    font-size: 1.1rem;
+}
+
+section li{
+    margin: 15px 0px 0px 20px;
+}
+h2{
+    text-align: center;
+}
+
+code{
+    display: block;
+    position: relative;
+    background: #f1f1f1;
+    color: black;
+    padding: 20px;
+    line-height: 2rem;
+    margin: 10px;
+    border: 2px solid #33acdd;
+    border-radius: 5px;
+}
+article{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* The side navigation menu */
+#navbar{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  #navbar header{
+      text-align: center;
+      margin: 0 auto;
+      font-size: 25px;
+      font-weight: 550;
+      margin-bottom: 30px;
+      background-color: #33acdd;
+      color: #fff;
+      /* background: rgb(46, 107, 44); */
+    }
+    
+    #navbar ul li{
+        list-style: none;
+    }
+    /* Sidebar links */
+    #navbar ul li a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    /* Active/current link */
+    #navbar li.active a{
+        color: white;
+        background-color: #2e7896;
+    }
+    
+    /* Links on mouse-over */
+    #navbar ul li:hover:not(.active) a{
+        color: white;
+        background-color: #555;
+    }
+    
+    /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+    main#main-doc {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+    }
+    hr{
+        margin-top: 35px;
+    }
+
+    #Reference{
+        text-align: center;
+        background-color: #beb0b08a;
+        padding: 10px;
+    }
+
+    /* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) {
+        #navbar{
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        #navbar header{
+            text-align: center;
+            margin: 0 auto;
+            font-size: 35px;
+            font-weight: 500;
+            color: #fff;
+            background-color: #33acdd;
+            margin-bottom: 15px;
+    }
+    #navbar a {
+        float: left;
+    }
+    
+    #navbar li.active a{
+        background-color: #2e7896;
+        color: #fff;
+    }
+
+    main#main-doc {
+        margin-left: 0;
+    }
+
+    section header{
+        text-align: center;
+        padding-top: 25px;
+    }
+    .head{
+        text-align: left;
+        padding: 10px;
+    }
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    #navbar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+
+@media screen and (max-width:1124px) {
+ header{
+     margin-top: 10px;
+     font-size: 30px;
+ }
+}
